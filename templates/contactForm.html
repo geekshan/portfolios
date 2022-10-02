@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Contack Form</title>
+    </head>
+    <body>
+        <form method='POST'>
+            {% csrf_token %}
+        <div>
+            <label for="">Name</label>
+            <input type="text" name="name" class="form-control"/>
+        </div>
+    </br>
+        <div>
+            <label for="">Age</label>
+            <input type="text" name="age" class="form-control"/>
+        </div>
+    </br>
+        <div class="pt-4">
+            <button type="submit">Submit</button></form>
+        </div>
+    </br>
+    Output
+</br>
+<div>
+    <label for="">My Name is </label>
+    <input type="text" value={{name}}/>
+</div>
+<div>
+    <label for="">My Age is </label>
+    <input type="text" value={{age}}/>
+</div>
+    </body>
+</html>
